@@ -61,7 +61,7 @@ class TennisBall {
 
     //  We can work out how many pixel per cm, because we know the height length and the actual height (in cm)
     const pxPerCm = heightLength / height
-    const tennisBallHeight = pxPerCm * 6.86 //  Tennis ball is 6.86cm in diameter
+    const tennisBallHeight = pxPerCm * 2.426 //  Tennis ball is 6.86cm in diameter
 
     //  Set your prefered colours here
     ctx.lineWidth = 3
