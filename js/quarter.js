@@ -66,7 +66,7 @@ class TennisBall {
     //  Set your prefered colours here
     ctx.lineWidth = 3
     ctx.strokeStyle = 'rgb(255, 255, 255)'
-    ctx.fillStyle = 'rgba(0, 0, 0, 1)'
+    ctx.fillStyle = 'rgba(85,85,85,1)'
 
     //  Drawing the ball
     ctx.beginPath()
@@ -74,12 +74,5 @@ class TennisBall {
     ctx.fill()
     ctx.stroke()
 
-    //  Drawing the two curves that make the tennis ball look like a tennis ball.
-    ctx.beginPath()
-    ctx.arc(halfway * 0.8 - (tennisBallHeight * 0.6), this.c.height + yOffset - (tennisBallHeight / 1.5), tennisBallHeight / 2, 1.8 * Math.PI, 2.37 * Math.PI)
-    ctx.stroke()
-    ctx.beginPath()
-    ctx.arc(halfway * 0.8 + (tennisBallHeight * 0.75), this.c.height + yOffset - (tennisBallHeight / 2.5), tennisBallHeight / 2, 0.815 * Math.PI, 1.27 * Math.PI)
-    ctx.stroke()
   }
 }
